@@ -73,7 +73,7 @@ export default function CoverflowCarousel() {
     <section className="py-32 bg-gray-50 border-y border-gray-200 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-end mb-16 relative z-20">
-          <h3 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] max-w-sm font-heading">
+          <h3 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] max-w-2xl font-heading">
             We are more than what you know
           </h3>
           <div className="flex gap-2">

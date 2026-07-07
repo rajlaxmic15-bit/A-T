@@ -1,8 +1,16 @@
+@import url('https://unpkg.com/geist/dist/fonts/geist-sans/style.css');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&f[]=general-sans@200,300,400,500,600,700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-roboto-slab), 'Roboto Slab', serif;
-  --font-heading: var(--font-roboto-slab), 'Roboto Slab', serif;
+  --font-geist: 'Geist', sans-serif;
+  --font-inter: var(--font-inter), 'Inter', sans-serif;
+  --font-satoshi: 'Satoshi', sans-serif;
+  --font-general: 'General Sans', sans-serif;
+  --font-neue: 'Neue Montreal', sans-serif;
+  
+  --font-sans: var(--font-geist);
+  --font-heading: var(--font-satoshi);
   --color-bg-main: #F5F5F5;
   --color-bg-secondary: #FFFFFF;
   --color-border-subtle: #E5E7EB;

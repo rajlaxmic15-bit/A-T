@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto_Slab } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWidgets from "@/components/FloatingWidgets";
 
-const robotoSlab = Roboto_Slab({
-  variable: "--font-roboto-slab",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${robotoSlab.variable} h-full antialiased scroll-smooth`}
+      className={`${inter.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col font-sans bg-[#F3F4F1] text-[#0B131F] overflow-x-hidden">
         <Navbar />

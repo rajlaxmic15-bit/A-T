@@ -84,11 +84,11 @@ export default function Home() {
 
       {/* 5. Latest Launches (Offset) */}
       <section className="py-16 md:py-24 max-w-7xl mx-auto px-6 lg:px-8">
-        <h3 className="text-3xl font-bold text-[#1A1A1A] mb-16 font-heading">Our Latest Launches</h3>
+        <h3 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-16 font-heading">Our Latest Launches</h3>
         
-        <div className="relative flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0 h-auto md:h-[450px]">
+        <div className="relative flex flex-col md:block items-center justify-center gap-4 md:gap-0 h-auto md:h-[550px]">
           {/* Card 1 (Left) */}
-          <div className="bg-white border border-gray-200 shadow-xl p-8 z-10 w-full md:w-[45%] md:absolute md:left-10 md:top-10 flex gap-6">
+          <div className="bg-white border border-gray-200 shadow-xl p-8 z-10 w-full md:w-[55%] md:absolute md:left-10 md:top-10 flex gap-6">
              <div className="flex-1">
                <span className="text-orange-500 text-[10px] font-bold uppercase tracking-widest block mb-2">Residential</span>
                <h4 className="text-2xl font-bold text-[#1A1A1A] mb-4 font-heading">Sohamdhwani Smart Living</h4>
@@ -101,17 +101,31 @@ export default function Home() {
              </div>
           </div>
           
-          {/* Card 2 (Right, Dark) */}
-          <div className="bg-white text-[#0f172a] p-8 z-0 w-full md:w-[60%] md:absolute md:right-10 md:bottom-10 flex gap-6 md:pl-32 shadow-2xl">
+          {/* Card 2 (Right) */}
+          <div className="bg-white text-[#0f172a] border border-gray-200 shadow-xl p-8 z-20 w-full md:w-[55%] md:absolute md:right-10 md:top-[160px] flex gap-6">
             <div className="flex-1">
-               <span className="text-orange-400 text-[10px] font-bold uppercase tracking-widest block mb-2">Premium Estate</span>
+               <span className="text-orange-500 text-[10px] font-bold uppercase tracking-widest block mb-2">Premium Estate</span>
                <h4 className="text-2xl font-bold text-[#0f172a] mb-4 font-heading">Audumbar Residences</h4>
                <Link href="/projects" className="inline-flex items-center text-xs font-bold text-[#0f172a] uppercase tracking-wider hover:underline">
                  Learn More <ArrowRight className="w-3 h-3 ml-1" />
                </Link>
              </div>
-             <div className="w-1/2 h-40 relative hidden sm:block">
+             <div className="w-1/2 h-32 relative hidden sm:block">
                <Image src="/projects/Audumbar.png" alt="Audumbar" fill className="object-cover" />
+             </div>
+          </div>
+
+          {/* Card 3 (Left) */}
+          <div className="bg-white border border-gray-200 shadow-xl p-8 z-30 w-full md:w-[55%] md:absolute md:left-10 md:bottom-10 flex gap-6">
+             <div className="flex-1">
+               <span className="text-orange-500 text-[10px] font-bold uppercase tracking-widest block mb-2">Luxury Apartments</span>
+               <h4 className="text-2xl font-bold text-[#1A1A1A] mb-4 font-heading">Tuljai Imperials</h4>
+               <Link href="/projects" className="inline-flex items-center text-xs font-bold text-[#1A1A1A] uppercase tracking-wider hover:underline">
+                 Learn More <ArrowRight className="w-3 h-3 ml-1" />
+               </Link>
+             </div>
+             <div className="w-1/2 h-32 relative hidden sm:block">
+               <Image src="/projects/Tuljai.png" alt="Tuljai" fill className="object-cover" />
              </div>
           </div>
         </div>
@@ -128,7 +142,7 @@ export default function Home() {
       {/* 9. What's New */}
       <section className="py-16 md:py-24 max-w-7xl mx-auto px-6 lg:px-8">
          <div className="flex justify-between items-center mb-12">
-            <h3 className="text-3xl font-bold text-[#1A1A1A] font-heading">What&apos;s New at A&T Buildcon</h3>
+            <h3 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] font-heading">What&apos;s New at A&T Buildcon</h3>
          </div>
          
          <div className="relative h-[400px] w-full">
